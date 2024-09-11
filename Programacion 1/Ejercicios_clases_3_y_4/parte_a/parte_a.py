@@ -30,7 +30,7 @@
 # def restar3(a: int, b: int):
 #     print(a - b)
 
-# def restar4():
+# def restar4():        
 #     a = 20  
 #     b = 8   
 #     print(a - b)
