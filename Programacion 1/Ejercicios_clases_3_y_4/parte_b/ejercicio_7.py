@@ -5,7 +5,7 @@
 # resultado_final = resultado_nacional + resultado_exportaciones
 # return resultado_final
 
-def calculo_iva(iva: int = 21) -> float:
+def calcular_iva(iva: int = 21) -> float:
     '''
     Calcula el valor del iva 
     
@@ -20,7 +20,7 @@ def calculo_iva(iva: int = 21) -> float:
     resultado = (1 / (1 + (iva / 100)))
     return resultado
     
-def calculo_retenciones(retenciones: int = 15) -> float:
+def calcular_retenciones(retenciones: int = 15) -> float:
     '''
     Calcula el valor de las retenciones 
     
@@ -49,7 +49,7 @@ def resultado_nacional(valor_venta_nacionales: int) -> int:
     retorna el valor de las ventas nacionales con el iva agregado
     '''
 
-    res_nacional = valor_venta_nacionales * (calculo_iva)
+    res_nacional = valor_venta_nacionales * (calcular_iva)
 
     return res_nacional
 
@@ -66,7 +66,7 @@ def resultado_exportaciones(valor_exportaciones: int) -> int:
     retorna el valor de las exportanciones con las retenciones agregadas
     '''
 
-    res_exportaciones = valor_exportaciones * (calculo_retenciones)
+    res_exportaciones = valor_exportaciones * (calcular_retenciones)
 
     return res_exportaciones
 

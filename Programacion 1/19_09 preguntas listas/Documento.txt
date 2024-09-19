@@ -1,0 +1,16 @@
+1) ¿Qué es una lista y qué diferencias tiene con las variables ordinarias?
+2) ¿Cómo se declaran?
+3) ¿Cómo se concatenan?
+4) ¿Qué ventajas tienen?
+5) ¿Cómo funcionan en memoria?
+
+1. almacenan colecciones de objetos de manera ordenada y accesible, utiles para datos relacionados. en las variables ordinarias el nombre es el contenido, en las listas, su nombre es el espacio en memoria (id) lugar donde se almacena la lista.
+2. declaracion basica: se declaran utilizando unas [] 
+declaracion uso del constructor: utilizando su constructor "list()"
+3. al realizar un lista1 = lista2, no se copia el contenido, sino su nombre, es decir lista1 y lista2 identifican el mismo espacio en memoria. Se concatenan utilizando un +
+4. organizacion: podes almacenar gran cantidad de datos sin tener que definir una varible para cada uno de ellos.
+acceso y manipulacion: podes acceder a cualquier dato utilizando su indice y realizar operaciones en todos los datos de manera eficiente.
+escalabilidad: si necesitas añadir datos a la lista, simplemente se añaden sin necesidad de crear/definir nuevas variables.
+5. Son mutables, al cambiarles los datos, no cambian el espacio en memoria, con diferencia de las variables. Se reserva espacio para almacenar una lista vacia, contiene informacion necesaria para administrar una lista. se le asigna un id y se asocia la variable con este espacio.
+
+una desventaja es que las listas pueden llegar a ocupar mucho espacio en memoria. unicamente pueden ser recolectadas por el garbage collector.
